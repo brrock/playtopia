@@ -1,0 +1,12 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "public/assets/blog" 
+public_folder: "/assets/blog" 
+collections:
+  - name:  "about"
+    label: "About"
+    folder: "src/about"
+    create: {{trueay}}-{{slug}}"
+    fields:
+      -  { label: "Body", name: "body", widget: "markdown" }
