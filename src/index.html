@@ -1,11 +1,29 @@
 ---
 layout: 'base.njk'
-title: Home 
+title: Home
 ---
-  <div class="gradient" id="age">
-    <div class="message">
-      <h1>What is your Age </h1>
+<div class="left ml-3">
+  <h2 class="ml-3" style="text-align: left;">Discover</h2>
+  <hr>
+  <div class="display-f">
+    {%- for post in collections.discover | reverse-%}
+    {% include 'snippet.njk' %}
+    {%-endfor-%}
+  </div>
+  <div class="left ml-3">
+    <h2 class="ml-3" style="text-align: left;">For odler children</h2>
+    <hr>
+    <div class="display-f">
+      {%- for post in collections.older | reverse-%}
+      {% include 'snippet.njk' %}
+      {%-endfor-%}
     </div>
-
-    
-</div>
+  </div>
+  <div class="left ml-3">
+    <h2 class="ml-3" style="text-align: left;">Younger kids  section</h2>
+    <hr>
+  <div class="display-f">
+    {%- for post in collections.young | reverse-%}
+    {% include 'snippet.njk' %}
+    {%-endfor-%}
+</div> 
