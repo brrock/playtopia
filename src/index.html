@@ -6,7 +6,7 @@ title: Home
   <h2 class="ml-3" style="text-align: left;">Discover </h2>
   <hr>
   <div class="display-f">
-    {%- for post in collections.discover | reverse-%}
+    {%- for post in collections.discover | reverse -%}
     {% include 'snippet.njk' %}
     {%-endfor-%}
   </div>
@@ -14,7 +14,7 @@ title: Home
     <h2 class="ml-3" style="text-align: left;">For odler children</h2>
     <hr>
     <div class="display-f">
-      {%- for post in collections.older | reverse-%}
+      {%- for post in collections.older | reverse -%}
       {% include 'snippet.njk' %}
       {%-endfor-%}
     </div>
@@ -23,7 +23,7 @@ title: Home
     <h2 class="ml-3" style="text-align: left;">Younger kids  section</h2>
     <hr>
   <div class="display-f">
-    {%- for post in collections.young | reverse-%}
+    {%- for post in collections.young | reverse -%}
     {% include 'snippet.njk' %}
     {%-endfor-%}
 </div> 
