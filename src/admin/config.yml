@@ -12,6 +12,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tag", name: "tag", widget: "string"}
       - {label: "Featured Image", name: "image", widget: "image"}
       - {label: "ImageAlt", name: "imageAlt", widget: "string"}
       - {label: "id", name: "id", widget: "integer"}
