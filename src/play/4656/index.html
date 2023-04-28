@@ -6,8 +6,12 @@
 </head>
 <body>
     {% include "play-template.njk" %}
+    <button onclick="help ()"> Help </button>
     <canvas id="game" width="640" height="480"></canvas>
   <script>
+    function help () {
+      alert("Use the arrow keys to hit the ball.")
+    }
     var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
     function floor(x, height) {

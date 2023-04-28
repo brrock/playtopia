@@ -26,7 +26,11 @@ button {
     display: none;
 }
 
-
+img {
+    max-width: 50%;
+    max-height: 50%;
+    padding: 0;
+}
 * {
     color: inherit;
     margin: 0;
@@ -63,9 +67,6 @@ a {
     text-decoration: underline
 }
 
-img {
-    max-width: 100%
-}
 
 .text-align {
     text-align: Center
