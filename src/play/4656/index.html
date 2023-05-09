@@ -6,12 +6,8 @@
 </head>
 <body>
     {% include "play-template.njk" %}
-    <button onclick="help ()"> Help </button>
     <canvas id="game" width="640" height="480"></canvas>
   <script>
-    function help () {
-      alert("Use the arrow keys to hit the ball.")
-    }
     var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
     function floor(x, height) {
@@ -85,16 +81,16 @@
         this.moveFloor();
       },
       draw: function() {
-        ctx.fillStyle = "cyan";
+        ctx.fillStyle = "blue";
         ctx.fillRect (0, 0, this.width, this.height);
         for(index in this.floorTiles) {
           var tile = this.floorTiles[index];
           var y = world.height - tile.height;
-          ctx.fillStyle = "indigo";
+          ctx.fillStyle = "lightblue";
           ctx.fillRect(tile.x, y, tile.width, tile.height);
         }
         ctx.fillStyle = "white";
-        ctx.font = "28px Arial";
+        ctx.font = "28px Poppins";
         ctx.fillText("Speed: " + this.speed, 10, 40);
         ctx.fillText("Travelled: " + this.distanceTravelled, 10, 75);
       }

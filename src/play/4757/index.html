@@ -5,9 +5,13 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    {% include "play-template.njk" %}     
+    {% include "play-template.njk" %}
+    <button onclick="help ()"> Help </button>     
     <canvas id="game" width="640" height="480"></canvas>
   <script>
+        function help () {
+      alert("Use the arrow keys to move the paddle to hit the ball.")
+    }
     var canvas = document.getElementById("game");
     var ctx = canvas.getContext("2d");
     function paddle(x, y, width, height) {
@@ -116,7 +120,7 @@
       renderBall(ball);
     }
     function renderPaddle(paddle) {
-      ctx.fillStyle = "blue";
+      ctx.fillStyle = "lightblue";
       ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
     }
     function renderBall(ball) {
