@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://praxis-gear-332712.firebaseapp.com/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://praxis-gear-332712.firebaseapp.com/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://praxis-gear-332712.firebaseapp.com/favicons/favicon-32x32.png">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" ></script>
+    <script src="s.js"> </script>
+    <title>about</title>
+</head>
+<body>
+    <main>
+      <nav class="navbar justify-between ">
+    <div class="container">
+      <h1 class="site-title"><a href="/">Game  <span> &#10060;  </span></a></h1>
+      <ul class="display-f">
+        <li class="ml-1 text-hover-secondary"><a href="#"></a></li>
+        <li class="ml-1 text-hover-secondary"><a href="#"> </a></li>
+        <li class="ml-1 text-hover-secondary"><a href="#"></a></li>
+      </ul>
+    </div>
+  </nav>
+    <p> Not finished </p>
+    <footer class="bg-gray-light-7 pt-3 pb-3 mt-5">
+      <div class="container">
+        By Benjy Ross
+        Icons by icons8 <a href"icons8.com"> Go </a>
+        Please note that this web site is permantly growing.
+        I may not have finished everything as it's an on growing development.
+        <br>
+        <a href="#">License</a>
+        <a href="/submit">Sumbit errors</a>
+      </footer>
+    </main>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+</body>
+</html>
